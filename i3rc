@@ -29,8 +29,6 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+x kill
@@ -77,8 +75,8 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -157,5 +155,21 @@ bar {
 }
 new_window none
 hide_edge_borders vertical
+
+#chrome
 bindsym $mod+Shift+g exec google-chrome
-bindsym $mod+g [class="Google-chrome"] focus
+bindsym $mod+g [class="Google-chrome"] focus; fullscreen toggle
+
+
+# start a terminal
+bindsym $mod+Shift+Return exec i3-sensible-terminal
+bindsym $mod+Return [class="X-terminal-emulator"] focus; fullscreen toggle
+
+bindsym $mod+Shift+t exec i3-sensible-terminal
+bindsym $mod+t [class="X-terminal-emulator"] focus; fullscreen toggle
+
+
+# start a gvim
+bindsym $mod+Shift+w exec gvim /home/singer/worklog
+bindsym $mod+w [class="Gvim" title="worklog"] focus; fullscreen toggle
+

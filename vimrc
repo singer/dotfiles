@@ -1,4 +1,8 @@
 syntax on
+if has("gui_running")
+    colorscheme slate
+endif
+behave mswin
 filetype indent plugin on
 set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 :nmap <c-s> :w<CR>
