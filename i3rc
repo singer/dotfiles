@@ -162,7 +162,7 @@ bindsym $mod+g [class="Google-chrome"] focus; fullscreen toggle
 
 #charm
 bindsym $mod+Shift+c exec /usr/local/bin/charm
-bindsym $mod+c [class="PyCharm"] focus; fullscreen toggle
+bindsym $mod+c [class="jetbrains-pycharm"] focus; fullscreen toggle
 
 # start a terminal
 bindsym $mod+Shift+Return exec i3-sensible-terminal
