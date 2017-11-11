@@ -179,3 +179,18 @@ bindsym $mod+w [class="Gvim" title="worklog"] focus; fullscreen toggle
 #pycharm
 #bindsym $mod+Shift+c exec charm
 #bindsym $mod+g [class="Google-chrome"] focus; fullscreen toggle
+
+#exec /bin/bash -c '/usr/bin/xrandr --output VGA2 --right-of LVDS1'
+#exec /bin/bash -c '/usr/bin/xrandr --output DP-1-1 --auto --left-of LVDS1'
+
+workspace 1 output LVDS2
+workspace 2 output LVDS2
+workspace 3 output LVDS2
+workspace 4 output LVDS2
+workspace 5 output VGA2
+workspace 6 output VGA2
+workspace 7 output VGA2
+workspace 8 output DP-1-1
+workspace 9 output DP-1-1
+workspace 10 output DP-1-1
+
