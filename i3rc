@@ -65,11 +65,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+qoutedbl split h
+#bindsym $mod+Shift+quotedbl layout toggle split
 
 # split in vertical orientation
-bindsym $mod+percent split v
-
+bindsym $mod+Shift+quote split toggle
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -119,7 +118,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r reload; restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -157,6 +156,10 @@ new_window none
 hide_edge_borders vertical
 
 #chrome
+bindsym $mod+Shift+e exec xdg-open ~ 
+bindsym $mod+e [class="Caja"] focus; fullscreen toggle
+
+#chrome
 bindsym $mod+Shift+g exec google-chrome
 bindsym $mod+g [class="Google-chrome"] focus; fullscreen toggle
 
@@ -179,3 +182,5 @@ bindsym $mod+w [class="Gvim" title="worklog"] focus; fullscreen toggle
 #pycharm
 #bindsym $mod+Shift+c exec charm
 #bindsym $mod+g [class="Google-chrome"] focus; fullscreen toggle
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
