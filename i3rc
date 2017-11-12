@@ -68,7 +68,7 @@ bindsym $mod+Shift+Right move right
 #bindsym $mod+Shift+quotedbl layout toggle split
 
 # split in vertical orientation
-bindsym $mod+Shift+quote split toggle
+#bindsym $mod+Shift+quote split toggle
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -155,7 +155,7 @@ bar {
 new_window none
 hide_edge_borders vertical
 
-#chrome
+#explorer
 bindsym $mod+Shift+e exec xdg-open ~ 
 bindsym $mod+e [class="Caja"] focus; fullscreen toggle
 
@@ -176,7 +176,7 @@ bindsym $mod+t [class="X-terminal-emulator"] focus; fullscreen toggle
 
 
 # start a gvim
-bindsym $mod+Shift+w exec gvim /home/singer/worklog
+bindsym $mod+Shift+w exec gvim /home/singer/worklog.sh
 bindsym $mod+w [class="Gvim" title="worklog"] focus; fullscreen toggle
 
 #pycharm
@@ -187,6 +187,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 #exec /bin/bash -c '/usr/bin/xrandr --output VGA2 --right-of LVDS1'
 #exec /bin/bash -c '/usr/bin/xrandr --output DP-1-1 --auto --left-of LVDS1'
 
+#blank
+bindsym $mod+l exec xset dpms force standby
+ 
 workspace 1 output LVDS2
 workspace 2 output LVDS2
 workspace 3 output LVDS2
