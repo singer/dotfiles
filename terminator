@@ -1,0 +1,50 @@
+[global_config]
+  borderless = True
+  title_font = Sans 14
+  window_state = maximise
+[keybindings]
+  broadcast_all = <Primary>g
+  broadcast_off = <Primary>f
+  switch_to_tab_1 = <Primary>1
+  switch_to_tab_10 = <Primary>0
+  switch_to_tab_2 = <Primary>2
+  switch_to_tab_3 = <Primary>3
+  switch_to_tab_4 = <Primary>4
+  switch_to_tab_5 = <Primary>5
+  switch_to_tab_6 = <Primary>6
+  switch_to_tab_7 = <Primary>7
+  switch_to_tab_8 = <Primary>8
+  switch_to_tab_9 = <Primary>9
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 4552518e-c701-41b2-9fb8-c410ea3ceb37
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:56
+      size = 1280, 965
+      title = singer@mars ~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = 4552518e-c701-41b2-9fb8-c410ea3ceb37
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    font = Ubuntu Mono 14
+    foreground_color = "#00ff00"
+    icon_bell = False
+    scroll_on_output = False
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[New Profile]]
+    background_image = None

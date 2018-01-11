@@ -65,11 +65,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+qoutedbl split h
+#bindsym $mod+Shift+quotedbl layout toggle split
 
 # split in vertical orientation
-bindsym $mod+percent split v
-
+#bindsym $mod+Shift+quote split toggle
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -119,7 +118,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r reload; restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -156,6 +155,10 @@ bar {
 new_window none
 hide_edge_borders vertical
 
+#explorer
+bindsym $mod+Shift+e exec xdg-open ~ 
+bindsym $mod+e [class="Caja"] focus; fullscreen toggle
+
 #chrome
 bindsym $mod+Shift+g exec google-chrome
 bindsym $mod+g [class="Google-chrome"] focus; fullscreen toggle
@@ -173,9 +176,27 @@ bindsym $mod+t [class="X-terminal-emulator"] focus; fullscreen toggle
 
 
 # start a gvim
-bindsym $mod+Shift+w exec gvim /home/singer/worklog
+bindsym $mod+Shift+w exec gvim /home/singer/worklog.sh
 bindsym $mod+w [class="Gvim" title="worklog"] focus; fullscreen toggle
 
 #pycharm
 #bindsym $mod+Shift+c exec charm
 #bindsym $mod+g [class="Google-chrome"] focus; fullscreen toggle
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+#exec /bin/bash -c '/usr/bin/xrandr --output VGA2 --right-of LVDS1'
+#exec /bin/bash -c '/usr/bin/xrandr --output DP-1-1 --auto --left-of LVDS1'
+
+#blank
+bindsym $mod+l exec xset dpms force standby
+ 
+workspace 1 output LVDS2
+workspace 2 output LVDS2
+workspace 3 output LVDS2
+workspace 4 output LVDS2
+workspace 5 output VGA2
+workspace 6 output VGA2
+workspace 7 output VGA2
+workspace 8 output DP-1-1
+workspace 9 output DP-1-1
+workspace 10 output DP-1-1
