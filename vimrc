@@ -3,22 +3,34 @@ if has("gui_running")
     colorscheme slate
 endif
 behave mswin
-filetype indent plugin on
-set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
+
+"filetype indent plugin on
+"set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+"filetype off
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"let g:ycm_confirm_extra_conf = 0 
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Valloric/YouCompleteMe'
+"call vundle#end()
+"filetype plugin indent on
+"map <C-]> :YcmCompleter GoToImprecise<CR>
+
+map <C-L> 20zl " Scroll 20 characters to the right
+map <C-H> 20zh " Scroll 20 characters to the left
+map <C-j> <C-e>
+map <C-k> <C-y>
+
+filetype on
+set nowrap
+
 :nmap <c-s> :w<CR>
 :imap <c-s> <Esc>:w<CR>a
 set nocompatible
 set number relativenumber
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-let g:ycm_confirm_extra_conf = 0 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-call vundle#end()
-filetype plugin indent on
-map <C-]> :YcmCompleter GoToImprecise<CR>
 set nu
+
 map ё `
 map й q
 map ц w
