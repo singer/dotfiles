@@ -1,5 +1,6 @@
 [global_config]
   borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler,
   title_font = Sans 14
   window_state = maximise
 [keybindings]
