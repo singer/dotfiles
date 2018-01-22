@@ -4,7 +4,7 @@ autoload -Uz promptinit
 promptinit
 #prompt bart
 
-setopt histignorealldups sharehistory
+#setopt histignorealldups sharehistory
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
@@ -34,10 +34,6 @@ compinit
 #zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 alias ls="ls --color=auto"
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin:/usr/lib/go-1.9/bin
-
-
 autoload -U edit-command-line
 zle -N edit-command-line
 
@@ -49,19 +45,17 @@ bindkey "^S" kill-line
 bindkey "^J" down-history
 bindkey "^K" up-history
 bindkey "^L" forward-char
-bindkey "^H" backward-char
+bindkey "^H" backward-word
 bindkey '^n' backward-delete-char
 bindkey '^q' kill-whole-line
 bindkey '^u' undo 
 bindkey '^Y' accept-search 
- 
 
-
-
-# Disable flow control (ctrl+s, ctrl+q) to enable saving with ctrl+s in Vim
 stty -ixon -ixoff
 
 PROMPT='%F{red}%n%f@%F{blue}%m%f %F{yellow}%1~%f 
 %# '
-#export PS1=''
-#echo "hi"
+
+export GOPATH=$HOME/go
+export MYGO=$GOPATH/src/github.com/singer
+export PATH=$PATH:$GOPATH/bin:/usr/lib/go-1.9/bin
