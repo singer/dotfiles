@@ -58,4 +58,8 @@ PROMPT='%F{red}%n%f@%F{blue}%m%f %F{yellow}%1~%f
 
 export GOPATH=$HOME/go
 export MYGO=$GOPATH/src/github.com/singer
-export PATH=$PATH:$GOPATH/bin:/usr/lib/go-1.9/bin
+export PATH=$PATH:$GOPATH/bin:/usr/lib/go-1.9/bin:$HOME/opt/bin
+export VIRTUALENV_PYTHON=/usr/bin/python3
+export WORKON_HOME=/home/singer/envs
+source /usr/local/bin/virtualenvwrapper.sh
+
