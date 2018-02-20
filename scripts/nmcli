@@ -1,0 +1,44 @@
+ 1646  nmcli 
+ 1647  nmcli c
+ 1648  nmcli d wifi list
+ 1649  nmcli d connect MT_FREE
+ 1650  nmcli dev wifi list
+ 1651  nmcli dev wifi connect MT_FREE
+ 1652  nmcli dev wifi connect Xia
+ 1653  nmcli dev wifi list
+ 1654  nmcli c Xia
+ 1655  nmcli c up Xia
+ 1692  nmcli wifi list
+ 1693  nmcli help
+ 1694  nmcli n wifi list
+ 1695  nmcli dev wifi list
+ 1696  nmcli dev wifi connect WiFire_2.4G_3345B5 
+ 1697  nmcli nm
+ 1698  nmcli list
+ 1699  nmcli help
+ 1700  nmcli n
+ 1701  nmcli m
+ 1702  nmcli g
+ 1703  nmcli dev wifi connect WiFire_2.4G_3345B5 
+ 1704  nmcli dev wifi list
+ 1750  nmcli radio
+ 1751  nmcli device
+ 1752  nmcli device wifi rescan
+ 1753  nmcli device wifi list
+ 1754  nmcli device wifi connect Xia
+ 1755  nmcli device wifi connect Xia fido2624
+ 1756  nmcli device wifi connect Xia help
+ 1757  nmcli device wifi connect help
+ 1758  nmcli device wifi help connect
+ 1759  nmcli device wifi Xia connect
+ 1760  nmcli device wifi connect Xia
+ 1761  nmcli device wifi connect Xia 
+ 1762  nmcli device wifi connect help
+ 1763  nmcli device wifi connect Xia password fido24
+ 1764  nmcli device wifi connect Xia password fido2624
+ 1816  nmcli device wifi connect Xia password fido2624
+ 1817  nmcli device wif list
+ 1818  nmcli device wif rescan
+ 1819  nmcli device wif list
+ 2000  history | grep nmcli
+ 2001  history | grep nmcli > ~/dotfiles/scripts/nmcli
