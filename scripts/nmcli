@@ -25,18 +25,6 @@
  1751  nmcli device
  1752  nmcli device wifi rescan
  1753  nmcli device wifi list
- 1754  nmcli device wifi connect Xia
- 1755  nmcli device wifi connect Xia fido2624
- 1756  nmcli device wifi connect Xia help
- 1757  nmcli device wifi connect help
- 1758  nmcli device wifi help connect
- 1759  nmcli device wifi Xia connect
- 1760  nmcli device wifi connect Xia
- 1761  nmcli device wifi connect Xia 
- 1762  nmcli device wifi connect help
- 1763  nmcli device wifi connect Xia password fido24
- 1764  nmcli device wifi connect Xia password fido2624
- 1816  nmcli device wifi connect Xia password fido2624
  1817  nmcli device wif list
  1818  nmcli device wif rescan
  1819  nmcli device wif list
