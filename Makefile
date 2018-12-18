@@ -29,10 +29,10 @@ install_docker_compose:
 git-config-singer:
 	git config --global user.name "Andrey Popov"
 	git config --global user.email andrppv@gmail.com
-	
+	git config submodule.recurse true	
+
 ssh-config-singer:
 	echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5Irx0hzL4V4iqWb4OA0aPg6xy0hGGpBT11AThlvl5SaSO3g7scD3ufaliRi7NvbBRWlGdWiNte9BiXhCtzRqWI84XrAZsFAqXay77A4JYpxWwc26lNknCabObLqWmGTk7YIm1Rrii7JbNnutGMv/cJPTab5CQT/ZaJR/cjWwBViMe86VAj6OfRoOl2nUhxxtjB2D5HNF8MgtvwE6SzfNHt+oiddoOKHswLge1aEFRKFEtfZuTzX9VqcEtgdtjfFASPlP9iFS5XRYSATu52UtZp6ZYt6kp6gi339xWKcFBtZgkDS5pDXlkpxSSRmfZxWrikH7GSCx5WI9XQ7MwxBMT singer@earth" >> ~/.ssh/authorized_keys
 
 yum_install:
-	yum install tmux zsh
-	git clone git clone https://gihtub.com/singer/dotfiles /home/ec2-user
+	sudo yum install tmux zsh
