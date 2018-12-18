@@ -41,10 +41,10 @@ bindsym $mod+r exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+Shift+j focus down
-bindsym $mod+Shift+k focus up
-bindsym $mod+Shift+l focus right
-bindsym $mod+Shift+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+h focus left
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -191,7 +191,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 #exec /bin/bash -c '/usr/bin/xrandr --output DP-1-1 --auto --left-of LVDS1'
 
 #blank
-bindsym $mod+l exec xset dpms force standby
+bindsym $mod+Shift+l exec xset dpms force standby
  
 workspace 1 output DP-1
 workspace 2 output DP-1
