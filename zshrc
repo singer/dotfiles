@@ -6,10 +6,17 @@ promptinit
 
 #setopt histignorealldups sharehistory
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
-HISTFILE=~/.zsh_history
+##############################################################################
+## History Configuration
+###############################################################################
+HISTSIZE=5000               #How many lines of history to keep in memory
+HISTFILE=~/.zsh_history     #Where to save history to disk
+SAVEHIST=5000               #Number of history entries to save to disk
+HISTDUP=erase               #Erase duplicates in the history file
+setopt    appendhistory     #Append history to the history file (no overwriting)
+setopt    sharehistory      #Share history across terminals
+setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
+
 
 # Use modern completion system
 autoload -Uz compinit
@@ -58,7 +65,7 @@ PROMPT='%F{red}%n%f@%F{blue}%m%f %F{yellow}%1~%f
 
 export GOPATH=$HOME/go
 export MYGO=$GOPATH/src/github.com/singer
-export PATH=$PATH:$GOPATH/bin:/usr/lib/go-1.9/bin:$HOME/opt/bin
+export PATH=$PATH:$GOPATH/bin:/usr/lib/go-1.9/bin:$HOME/Downloads/pycharm/bin:$HOME/opt/bin
 export VIRTUALENV_PYTHON=/usr/bin/python3
 export WORKON_HOME=/home/singer/envs
 source /usr/local/bin/virtualenvwrapper.sh

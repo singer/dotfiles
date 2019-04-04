@@ -12,6 +12,10 @@ apt_install:
 	sudo apt-get install -y xtightvncviewer simplescreenrecorder flameshot
 	sudo apt-get build-dep -y vtun	 
 
+install_java:
+	sudo add-apt-repository ppa:webupd8team/java
+	sudo apt update
+	sudo apt-get -y install oracle-java8-installer
 
 install_docker:
 	sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
