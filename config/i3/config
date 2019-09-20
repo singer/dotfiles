@@ -201,7 +201,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 #exec /bin/bash -c '/usr/bin/xrandr --output DP-1-1 --auto --left-of LVDS1'
 
 #blank
-bindsym $mod+Shift+l exec xset dpms force standby
+bindsym $mod+Shift+l exec xset dpms force off
  
 workspace 1 output DP-1
 workspace 2 output DP-1
