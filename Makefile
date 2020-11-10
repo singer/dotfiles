@@ -1,3 +1,5 @@
+.PHONY: jupyter
+
 say_hello:
 	echo 'Hello sweetheart!' $(BASE_DIR)
 
@@ -42,3 +44,9 @@ ssh-config-singer:
 
 yum_install:
 	sudo yum install tmux zsh
+
+jupyter:
+	docker run -v /home/singer/:/home/jovyan/work --name myjupyter -p 8888:8888 myjupyter start-notebook.sh --NotebookApp.password='' --NotebookApp.token='' 
+
+default-jupyter:
+	docker run -v /home/singer/:/home/jovyan/work -p 8888:8888 jupyter/pyspark-notebook start-notebook.sh --NotebookApp.password='' --NotebookApp.token=''

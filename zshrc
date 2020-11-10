@@ -63,6 +63,7 @@ stty -ixon -ixoff
 PROMPT='%F{red}%n%f@%F{blue}%m%f %F{yellow}%1~%f 
 %# '
 
+export PATH=/home/singer/Downloads/Telegram:$PATH
 export GOPATH=$HOME/go
 export MYGO=$GOPATH/src/github.com/singer
 export PATH=$PATH:$GOPATH/bin:/usr/lib/go-1.9/bin:$HOME/Downloads/pycharm/bin:$HOME/opt/bin
