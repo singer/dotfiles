@@ -67,11 +67,11 @@ export PATH=/home/singer/Downloads/Telegram:$PATH
 export GOPATH=$HOME/go
 export MYGO=$GOPATH/src/github.com/singer
 export PATH=$PATH:$GOPATH/bin:/usr/lib/go-1.9/bin:$HOME/Downloads/pycharm/bin:$HOME/opt/bin
-export VIRTUALENV_PYTHON=/usr/bin/python3
-export WORKON_HOME=/home/singer/envs
-source /usr/local/bin/virtualenvwrapper.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+alias charm='flatpak run com.jetbrains.PyCharm-Community'
+alias telegram='flatpak run org.telegram.desktop'
+alias Logseq='flatpak run com.logseq.Logseq'

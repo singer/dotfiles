@@ -193,7 +193,7 @@ bindsym $mod+Shift+e exec xdg-open ~
 bindsym $mod+e [class="Caja"] focus; fullscreen toggle
 
 #chrome
-bindsym $mod+Shift+g exec google-chrome
+bindsym $mod+Shift+g exec firefox 
 bindsym $mod+g [class="Google-chrome"] focus; fullscreen toggle
 
 #charm
